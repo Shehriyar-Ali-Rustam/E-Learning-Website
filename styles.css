@@ -1,0 +1,345 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #005f8a;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a {
+    margin: 0 15px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #ff6f61;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Home Section */
+.home {
+    background: url('home-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 120px 50px; /* Adjust padding to remove extra space */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home .btn-box {
+    padding: 15px 30px;
+    background: #ff6f61;
+    color: #fff;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.home .btn-box:hover {
+    background: #ff8562;
+}
+
+.home .home-sci a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.home .home-sci a:hover {
+    color: #ff6f61;
+}
+
+/* Home Image */
+.home-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    object-fit: cover; /* Ensure the image fits well */
+}
+
+/* Section General */
+.section {
+    padding: 80px 50px; /* Adjust padding to make space more uniform */
+    text-align: center;
+}
+
+.section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.section .btn-box {
+    padding: 15px 30px;
+    background: #0077b6;
+    color: #fff;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.section .btn-box:hover {
+    background: #005f8a;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #f4f4f4;
+    padding: 80px 50px; /* Adjust padding for spacing */
+}
+
+.about-img {
+    flex: 1;
+    text-align: center;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-text h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.about-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Courses Section */
+.courses {
+    background: #fff;
+    padding: 80px 50px; /* Adjust padding for spacing */
+}
+
+.courses-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.courses-list div {
+    width: 30%;
+    margin: 20px 0;
+    padding: 30px;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.courses-list div:hover {
+    transform: translateY(-10px);
+}
+
+.courses-list i {
+    font-size: 40px;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+.courses-list h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.courses-list p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.courses-list .read {
+    padding: 10px 20px;
+    background: #0077b6;
+    color: #fff;
+    border-radius: 25px;
+    transition: background 0.3s;
+}
+
+.courses-list .read:hover {
+    background: #005f8a;
+}
+
+/* Contact Section */
+.contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 80px 50px; /* Adjust padding for spacing */
+}
+
+.contact-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.contact-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-text h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #0077b6;
+}
+
+.contact-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-list li {
+    list-style: none;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: #0077b6;
+}
+
+.contact-form {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form .send {
+    width: 100%;
+    padding: 15px;
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form .send:hover {
+    background: #005f8a;
+}
+
+/* Footer */
+footer {
+    background: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .last-text {
+    margin-bottom: 20px;
+}
+
+footer .top {
+    color: #ff6f61;
+    font-size: 24px;
+    text-decoration: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+footer .top:hover {
+    background: #f4f4f4;
+}
